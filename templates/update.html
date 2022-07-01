@@ -1,0 +1,27 @@
+<html>
+    <head>My Kitchen Inventory App using PostgreSQL, Flask and Python</head>
+    <body>
+        <h1>Update Inventory</h1><br>
+        <div class="container">
+            <form action="/submit", method="POST">
+                <input name="item_id", type="text", placeholder="Enter item id">
+                <input name="item_name", type="text", placeholder="Enter item name">
+                <label>Select item type:</label>
+                <select name="item_type">
+                    <option value="liquid">Liquids</option>
+                    <option value="solids">Solids</option>
+                </select>
+                <label>Select item category:</label>
+                <select name="category">
+                    <option value="dairy">Dairy</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="protein">Proteins</option>
+                    <option value="others">Others</option>
+                </select>
+                <input name="item_count", type="text", placeholder="Enter item count">
+                <input type="submit", class="btn", value="Add">
+            </form>
+        </div>
+    </body>
+</html>
